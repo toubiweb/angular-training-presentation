@@ -1,0 +1,30 @@
+<h2>controller-as - contrôleurs imbriqués</h3>
+
+<div class="text-left">
+    
+<pre><code data-trim>
+ <div ng-controller="MainCtrl as main">
+  {{ main.title }}
+  <div ng-controller="AnotherCtrl as another">
+    Scope title: {{ another.title }}
+    Parent title: {{ main.title }}
+    <div ng-controller="YetAnotherCtrl as yet">
+      Scope title: {{ yet.title }}
+      Parent title: {{ another.title }}
+      Parent parent title: {{ main.title }}
+    </div>
+  </div>
+</div>
+</code></pre>
+   
+</div>
+
+<p class="text text-center">
+    Source: <a href="http://toddmotto.com/digging-into-angulars-controller-as-syntax/">
+            Digging into Angular’s “Controller as” syntax 
+    </a>
+</p>
+            
+            
+            
+           

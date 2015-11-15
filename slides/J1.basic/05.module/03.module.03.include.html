@@ -1,0 +1,18 @@
+<h2>Chargement des scripts et styles</h2>
+
+<p>Tous les fichiers doivent être chargés dans le fichier html:</p>
+
+<pre><code data-trim>
+<link rel="stylesheet" href="profile/profile.user-edit.css">
+...
+<script type="text/javascript" src="profile/profile.js"></script>
+<script type="text/javascript" src="profile/profile.user-edit.ctrl.js"></script>
+</code></pre>
+
+<p>Chargement de l'application:</p>
+<ul>
+    <li>Les modules sont déclarés</li>
+    <li>Les contrôleurs sont chargés dans les modules</li>
+    <li>Les services ($scope, $log) sont injectés</li>
+    <li>Les dépendances entre modules sont résolues</li>
+</ul>

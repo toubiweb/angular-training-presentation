@@ -1,0 +1,29 @@
+<h2>Contrôleur - chargement</h3>
+
+<div class="text-left">
+    
+  <p>Association du contrôlleur au template:
+
+<pre><code data-trim>
+<div class="body-area" ng-controller="TpaProfileUserEditController">
+
+    <div>
+        <label>Entrez votre prénom</label>
+        <div>
+            <input type="text" ng-model="user.firstName">
+        </div>
+    </div>
+
+    <p ng-if="user.firstName">Bonjour {{ user.firstName }}!</p>
+
+</div>
+</code></pre>
+   
+    </p>
+</div>
+
+<p class="text text-center">
+    <a href="https://code.angularjs.org/1.4.7/docs/guide/controller">
+           Documentation
+    </a>
+</p>

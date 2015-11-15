@@ -1,0 +1,27 @@
+<h2>Les directives - déclaration</h2>
+
+<p>Exemple avec controllerAs:</p>
+
+<pre><code data-trim>
+angular.module('tw.practice.form').directive('someDirective', function() {
+    return {
+        templateUrl: 'app/some.directive.html',
+        controllerAs: 'vm',
+        scope: {
+            param: '=',
+            callback: '&amp;',
+            value: '@'
+        },
+        bindToController: true,
+        controller: SomeDirectiveController
+    };
+}
+
+<div some-directive param="vm.name" callbackmethod="vm.doIt" value="5"></div>
+</code></pre>
+
+
+<p class="text text-center">
+  <a href="http://royto.familleroy.fr/2015/06/10/angular-directive-avec-controller-as-bindtocontroller-et-tests/">
+Directive avec controller as, bindToController et tests</a>
+</p>

@@ -1,0 +1,25 @@
+<h2>Fichier template</h2>
+
+<p>Le template est extrait dans un nouveau fichier profile.user-edit.html:</p>
+
+<pre><code data-trim>
+<div class="user-edit-area" ng-controller="TpaProfileUserEditController as userVm">
+    <div>
+        <label>Entrez votre prénom</label>
+    ...
+</code></pre>
+
+
+<p>Il est ensuite chargé via la directive ng-include (index.html):
+
+<pre><code data-trim>
+<div class="body-area">
+    <div ng-include="'/profile/profile.user-edit.html'"></div>
+</div>
+</code></pre>
+
+<p class="text text-center">
+    <a href="https://code.angularjs.org/1.4.7/docs/api/ng/directive/ngInclude">
+           /docs/api/ng/directive/ngInclude
+     </a>
+</p>

@@ -1,0 +1,14 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "update-list.json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Toublanc <n.toublanc@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^5.0.15"
+  }
+}
