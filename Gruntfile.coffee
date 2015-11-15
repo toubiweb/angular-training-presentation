@@ -101,7 +101,7 @@ module.exports = (grunt) ->
                 message: 'Built from %sourceCommit% on branch %sourceBranch%'
             pages:
                 options:
-                    remote: 'git@github.com:toub/toubiweb/angular-1.4-level2-slides-fr.git'
+                    remote: 'git@github.com:toubiweb/angular-training-presentation.git'
                     branch: 'gh-pages'
         
 
