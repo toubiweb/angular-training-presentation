@@ -1,0 +1,115 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+// This file has been copied over from
+// ../../bower_components/reveal.js/css/theme/source/black.scss
+// See ../../bower_components/reveal.js/css/theme/README.md
+// for further explanations on how to create a custom reveal.js theme.
+// Default mixins and settings -----------------
+@import "../../bower_components/reveal.js/css/theme/template/mixins";
+@import "../../bower_components/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+// Include theme-specific fonts
+@import url(../bower_components/reveal.js/lib/font/source-sans-pro/source-sans-pro.css);
+// Override theme settings (see ../../bower_components/reveal.js/css/theme/template/settings.scss)
+$backgroundColor: #222;
+$mainColor: #fff;
+$headingColor: #fff;
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro',
+Helvetica,
+sans-serif;
+$headingFont: 'Source Sans Pro',
+Helvetica,
+sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor,
+15%);
+$selectionBackgroundColor: lighten( $linkColor,
+25%);
+$heading1Size: 2em;
+$heading2Size: 1.3em;
+$heading3Size: 1.1em;
+$heading4Size: 1em;
+section.has-light-background {
+    &, h1, h2, h3, h4, h5, h6 {
+        color: #222;
+    }
+}
+
+// Theme template ------------------------------
+@import "../../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+div.slides section {
+    h2 {
+        box-shadow: 0 0 800px rgba(55, 65, 72, 0.8) inset;
+        text-shadow: 1px 1px #222;
+        color: white;
+        padding: 2px 5px;
+        border-radius: 8px;
+        &.strong{
+            background: #222;
+        }
+    }
+    &[data-background-image] {
+        .text {
+            box-shadow: 0 0 800px rgba(55, 65, 72, 0.8) inset;
+            text-shadow: 1px 1px #222;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 8px;
+            &.strong{
+                background: #222;
+            }
+        }
+        h1 {
+            color: #222;
+            text-shadow: 2px 1px white;
+        }
+    }
+    ul, p{
+        text-align: left;
+        &.text-center{
+            text-align: center;
+        }
+    }
+    img.main-image {
+        max-height: 250px;
+        border: none;
+    }
+    img.avatar {
+        max-height: 45px;
+        border-width: 3px;
+        border-radius: 8px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+        margin: 3px 2px 0 0;
+        float: right;
+    }
+    img.logo-customer {
+        max-height: 45px;
+        margin: 3px 2px 0 0;
+        float: right;
+        border: none;
+    }
+    
+    img.corner-logo{
+        float: left;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    
+    code{
+        font-size: 0.8em;
+    }
+}
+
+html body div.reveal.slide.center div.slides section.stack.present section.present ul{
+        text-align: left;
+    }

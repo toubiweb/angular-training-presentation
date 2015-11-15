@@ -1,0 +1,9 @@
+{
+  "name": "pour-aller-plus-loin-avec-angularjs-1-4",
+  "version": "0.0.0",
+  "dependencies": {
+    "reveal.js": "~3.1.0",
+    "highlightjs": "~8.5.0",
+    "reveal.js-menu": "~0.5.0"
+  }
+}

@@ -1,0 +1,29 @@
+<h2>controller-as - template</h3>
+
+<div class="text-left">
+    
+<pre><code data-trim>
+<div class="body-area" ng-controller="TpaProfileUserEditController as userVm">
+
+    <div>
+        <label>Entrez votre prénom</label>
+        <div>
+            <input type="text" ng-model="userVm.user.firstName">
+        </div>
+    </div>
+
+    <p ng-if="userVm.getFullName()">Bonjour {{ userVm.getFullName() }}!</p>
+
+    <div><input type="button" value="Reset" ng-click="userVm.reset()"></div>
+
+</div>
+</code></pre>
+   
+</div>
+
+<p class="text text-center">
+    <a href="https://code.angularjs.org/1.4.7/docs/guide/controller">
+           Documentation
+    </a>
+</p>
+            

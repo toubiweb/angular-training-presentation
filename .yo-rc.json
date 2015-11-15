@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Pour aller plus loin avec AngularJS 1.4",
+    "packageVersion": "0.0.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "toub",
+    "githubRepository": "toubiweb/angular-1.4-level2-slides-fr"
+  }
+}

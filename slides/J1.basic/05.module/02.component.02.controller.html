@@ -1,0 +1,18 @@
+<h2>Fichier contrôleur</h2>
+
+<p>Le contrôleur TpaProfileUserEditController est déplacé dans un fichier profile.user-edit.ctrl.js:</p>
+
+<pre><code class="javascript" data-trim>
+(function () {
+    'use strict';
+
+    angular
+        .module('tw.practice')
+        .controller('TpaProfileUserEditController', TpaProfileUserEditController);
+
+    function TpaProfileUserEditController($scope, $log) {
+        // view model
+        var vm = this;
+        ...
+    }
+}());</code></pre>

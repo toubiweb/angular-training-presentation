@@ -1,0 +1,22 @@
+<h2>Déclaration d'un module</h2>
+
+<p>Déclaration du module (profile.js) :</p>
+
+<pre><code data-trim>
+    angular.module('tw.practice.profile', []);
+</code></pre>
+
+<p>Injection du module dans l'application (app.js):</p>
+
+<pre><code data-trim>
+angular.module('tw.practice', ['tw.practice.profile']);
+</code></pre>
+
+
+<p>Le contrôleur est désormais déclaré dans le module (profile.user-edit.ctrl.js):</p>
+
+<pre><code data-trim>
+angular
+    .module('tw.practice.profile')
+    .controller('TpaProfileUserEditController', TpaProfileUserEditController);
+</code></pre>
